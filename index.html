@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3ccb9f99a0d79d8a069697ba67e6f7a6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3ccb9f99a0d79d8a069697ba67e6f7a6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3ccb9f99a0d79d8a069697ba67e6f7a6 = L.map(
+                "map_3ccb9f99a0d79d8a069697ba67e6f7a6",
+                {
+                    center: [54.5643, -1.3401],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_595274be53e963c2ede97b59efa94c40 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3ccb9f99a0d79d8a069697ba67e6f7a6);
+        
+    
+            var marker_ca385c569c55c4eedbff9d67ab5f2ba0 = L.marker(
+                [54.5643, -1.3401],
+                {}
+            ).addTo(map_3ccb9f99a0d79d8a069697ba67e6f7a6);
+        
+    
+            var beautify_icon_a9d0ad7b1f3ea9f2e8c39940d00d9273 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "darkblue", "borderWidth": 5, "icon": "1", "iconShape": "marker", "innerIconStyle": "font-size:16px; font-weight:bold;", "isAlphaNumericIcon": false, "spin": false, "textColor": "darkblue"}
+            )
+            marker_ca385c569c55c4eedbff9d67ab5f2ba0.setIcon(beautify_icon_a9d0ad7b1f3ea9f2e8c39940d00d9273);
+        
+    
+        var popup_f598062d1f848cf2a6ee734c9a2de96a = L.popup({"maxWidth": 300});
+
+        
+            var html_8cb19402c6eabdf97ee466a54b3896e9 = $(`<div id="html_8cb19402c6eabdf97ee466a54b3896e9" style="width: 100.0%; height: 100.0%;">     <div style="width:300px; height:300px; overflow-y:auto; font-family: Arial, sans-serif;">         <strong style="font-size:20px;">Betrayal in Lantern Yard</strong>         <p style="font-size:14px;">         Silas’s betrayal in Lantern Yard isolates him emotionally and spiritually. His trust in humanity is shattered, and he          becomes a reclusive figure. This moment catalyzes his retreat into solitude, setting the stage for his later redemption.          Eliot uses this betrayal to critique insular, self-righteous religious communities that fail to nurture the individual.         </p>         <img src="https://tse3.mm.bing.net/th?id=OIP.jxhXrO5uITlxGxIXS-QuAwHaL9&pid=Api" style="width:100%; height:auto; margin-top:10px;" alt="Betrayal in Lantern Yard">     </div>     </div>`)[0];
+            popup_f598062d1f848cf2a6ee734c9a2de96a.setContent(html_8cb19402c6eabdf97ee466a54b3896e9);
+        
+
+        marker_ca385c569c55c4eedbff9d67ab5f2ba0.bindPopup(popup_f598062d1f848cf2a6ee734c9a2de96a)
+        ;
+
+        
+    
+    
+            marker_ca385c569c55c4eedbff9d67ab5f2ba0.bindTooltip(
+                `<div>
+                     Step 1: Betrayal in Lantern Yard
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96eaa7810eef488058917043316c99d9 = L.marker(
+                [52.2819, -1.5849],
+                {}
+            ).addTo(map_3ccb9f99a0d79d8a069697ba67e6f7a6);
+        
+    
+            var beautify_icon_d671486370231aa585417c6490ecade5 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "darkblue", "borderWidth": 5, "icon": "2", "iconShape": "marker", "innerIconStyle": "font-size:16px; font-weight:bold;", "isAlphaNumericIcon": false, "spin": false, "textColor": "darkblue"}
+            )
+            marker_96eaa7810eef488058917043316c99d9.setIcon(beautify_icon_d671486370231aa585417c6490ecade5);
+        
+    
+        var popup_83ec21035fa909ace997ef937e5c68b8 = L.popup({"maxWidth": 300});
+
+        
+            var html_648aa88898b46fdc6ddde8df2ed513d5 = $(`<div id="html_648aa88898b46fdc6ddde8df2ed513d5" style="width: 100.0%; height: 100.0%;">     <div style="width:300px; height:300px; overflow-y:auto; font-family: Arial, sans-serif;">         <strong style="font-size:20px;">Silas’s Arrival in Raveloe</strong>         <p style="font-size:14px;">         Raveloe’s rural charm offers Silas a stark contrast to his life in Lantern Yard. Here, Eliot portrays a traditional,          close-knit society with deep communal ties. Silas’s initial isolation reflects his unwillingness to engage with this          community, emphasizing the barriers to connection.         </p>         <img src="https://tse3.mm.bing.net/th?id=OIP.pNUgtPwoFFex1JrJRxsRRgAAAA&pid=Api" style="width:100%; height:auto; margin-top:10px;" alt="Silas’s Arrival in Raveloe">     </div>     </div>`)[0];
+            popup_83ec21035fa909ace997ef937e5c68b8.setContent(html_648aa88898b46fdc6ddde8df2ed513d5);
+        
+
+        marker_96eaa7810eef488058917043316c99d9.bindPopup(popup_83ec21035fa909ace997ef937e5c68b8)
+        ;
+
+        
+    
+    
+            marker_96eaa7810eef488058917043316c99d9.bindTooltip(
+                `<div>
+                     Step 2: Silas’s Arrival in Raveloe
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_51271650729630a80c9f31d4b4d35912 = L.marker(
+                [52.291, -1.596],
+                {}
+            ).addTo(map_3ccb9f99a0d79d8a069697ba67e6f7a6);
+        
+    
+            var beautify_icon_8170c6d0aee4c34aaedcdd9595607881 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "darkblue", "borderWidth": 5, "icon": "3", "iconShape": "marker", "innerIconStyle": "font-size:16px; font-weight:bold;", "isAlphaNumericIcon": false, "spin": false, "textColor": "darkblue"}
+            )
+            marker_51271650729630a80c9f31d4b4d35912.setIcon(beautify_icon_8170c6d0aee4c34aaedcdd9595607881);
+        
+    
+        var popup_abcefdeb73059241f91114c096e169a3 = L.popup({"maxWidth": 300});
+
+        
+            var html_28803d4d1b9d18aa42895fb21f11869a = $(`<div id="html_28803d4d1b9d18aa42895fb21f11869a" style="width: 100.0%; height: 100.0%;">     <div style="width:300px; height:300px; overflow-y:auto; font-family: Arial, sans-serif;">         <strong style="font-size:20px;">The Loom and the Gold: Silas’s Solitary Obsession</strong>         <p style="font-size:14px;">         Silas’s obsession with weaving and hoarding gold symbolizes his attempt to replace human connection with material comfort.          His isolation underscores the consequences of disconnection from community life, a theme Eliot revisits as the novel progresses.         </p>         <img src="https://tse3.mm.bing.net/th?id=OIP.xaXE3GSTYhrY8lGR4Pfq5wHaL4&pid=Api" style="width:100%; height:auto; margin-top:10px;" alt="The Loom and the Gold: Silas’s Solitary Obsession">     </div>     </div>`)[0];
+            popup_abcefdeb73059241f91114c096e169a3.setContent(html_28803d4d1b9d18aa42895fb21f11869a);
+        
+
+        marker_51271650729630a80c9f31d4b4d35912.bindPopup(popup_abcefdeb73059241f91114c096e169a3)
+        ;
+
+        
+    
+    
+            marker_51271650729630a80c9f31d4b4d35912.bindTooltip(
+                `<div>
+                     Step 3: The Loom and the Gold: Silas’s Solitary Obsession
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f5678960f070e738f9008cd0f9853e9 = L.marker(
+                [52.27, -1.57],
+                {}
+            ).addTo(map_3ccb9f99a0d79d8a069697ba67e6f7a6);
+        
+    
+            var beautify_icon_e4dc04940ddd3fd44563ee11d6424661 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "darkblue", "borderWidth": 5, "icon": "4", "iconShape": "marker", "innerIconStyle": "font-size:16px; font-weight:bold;", "isAlphaNumericIcon": false, "spin": false, "textColor": "darkblue"}
+            )
+            marker_2f5678960f070e738f9008cd0f9853e9.setIcon(beautify_icon_e4dc04940ddd3fd44563ee11d6424661);
+        
+    
+        var popup_484d0baa1aea1e35fddbd3453ca29786 = L.popup({"maxWidth": 300});
+
+        
+            var html_3de4ee7c7a4978459e85a81be8c77152 = $(`<div id="html_3de4ee7c7a4978459e85a81be8c77152" style="width: 100.0%; height: 100.0%;">     <div style="width:300px; height:300px; overflow-y:auto; font-family: Arial, sans-serif;">         <strong style="font-size:20px;">Raveloe’s Curiosity and Hesitation</strong>         <p style="font-size:14px;">         The Raveloe villagers are initially wary of Silas, their suspicion fueled by his reclusiveness and strange habits.          This hesitance highlights the tension between individual difference and societal norms, central to Eliot’s philosophy.         </p>         <img src="https://tse3.mm.bing.net/th?id=OIP.-32SzygTXcrg01PASeKJbwHaLl&pid=Api" style="width:100%; height:auto; margin-top:10px;" alt="Raveloe’s Curiosity and Hesitation">     </div>     </div>`)[0];
+            popup_484d0baa1aea1e35fddbd3453ca29786.setContent(html_3de4ee7c7a4978459e85a81be8c77152);
+        
+
+        marker_2f5678960f070e738f9008cd0f9853e9.bindPopup(popup_484d0baa1aea1e35fddbd3453ca29786)
+        ;
+
+        
+    
+    
+            marker_2f5678960f070e738f9008cd0f9853e9.bindTooltip(
+                `<div>
+                     Step 4: Raveloe’s Curiosity and Hesitation
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22b87dcb8794404a31bf5dafc2d15472 = L.marker(
+                [52.285, -1.58],
+                {}
+            ).addTo(map_3ccb9f99a0d79d8a069697ba67e6f7a6);
+        
+    
+            var beautify_icon_b5ac5a3040667ea7cb783ba88cc07c6c = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "darkblue", "borderWidth": 5, "icon": "5", "iconShape": "marker", "innerIconStyle": "font-size:16px; font-weight:bold;", "isAlphaNumericIcon": false, "spin": false, "textColor": "darkblue"}
+            )
+            marker_22b87dcb8794404a31bf5dafc2d15472.setIcon(beautify_icon_b5ac5a3040667ea7cb783ba88cc07c6c);
+        
+    
+        var popup_2ec55a7e75d8704067326a6a68e92064 = L.popup({"maxWidth": 300});
+
+        
+            var html_7f2ec0ba23fa10822b9d2703e06347ec = $(`<div id="html_7f2ec0ba23fa10822b9d2703e06347ec" style="width: 100.0%; height: 100.0%;">     <div style="width:300px; height:300px; overflow-y:auto; font-family: Arial, sans-serif;">         <strong style="font-size:20px;">The Church and Its Role in Community</strong>         <p style="font-size:14px;">         The Raveloe church serves as a focal point for communal life, fostering shared traditions and values. While Silas initially          avoids this space, it becomes instrumental in his gradual integration into village society.         </p>         <img src="https://tse3.mm.bing.net/th?id=OIP.jxhXrO5uITlxGxIXS-QuAwHaL9&pid=Api" style="width:100%; height:auto; margin-top:10px;" alt="The Church and Its Role in Community">     </div>     </div>`)[0];
+            popup_2ec55a7e75d8704067326a6a68e92064.setContent(html_7f2ec0ba23fa10822b9d2703e06347ec);
+        
+
+        marker_22b87dcb8794404a31bf5dafc2d15472.bindPopup(popup_2ec55a7e75d8704067326a6a68e92064)
+        ;
+
+        
+    
+    
+            marker_22b87dcb8794404a31bf5dafc2d15472.bindTooltip(
+                `<div>
+                     Step 5: The Church and Its Role in Community
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c707e53cf687d47eb17d9d98fc5a7322 = L.marker(
+                [52.275, -1.6],
+                {}
+            ).addTo(map_3ccb9f99a0d79d8a069697ba67e6f7a6);
+        
+    
+            var beautify_icon_6a5bf6042b84f381262da99a33e35830 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "darkblue", "borderWidth": 5, "icon": "6", "iconShape": "marker", "innerIconStyle": "font-size:16px; font-weight:bold;", "isAlphaNumericIcon": false, "spin": false, "textColor": "darkblue"}
+            )
+            marker_c707e53cf687d47eb17d9d98fc5a7322.setIcon(beautify_icon_6a5bf6042b84f381262da99a33e35830);
+        
+    
+        var popup_4d293ebca5145de821a1cfa883cd3cf8 = L.popup({"maxWidth": 300});
+
+        
+            var html_7b203783454cdb87f379e1eaccaef365 = $(`<div id="html_7b203783454cdb87f379e1eaccaef365" style="width: 100.0%; height: 100.0%;">     <div style="width:300px; height:300px; overflow-y:auto; font-family: Arial, sans-serif;">         <strong style="font-size:20px;">The Theft of Silas’s Gold</strong>         <p style="font-size:14px;">         The loss of his gold devastates Silas but also creates space for something greater. Eliot uses this pivotal event to suggest          that material wealth cannot substitute for human connection, paving the way for Silas’s redemption through love and community.         </p>         <img src="https://tse3.mm.bing.net/th?id=OIP.pNUgtPwoFFex1JrJRxsRRgAAAA&pid=Api" style="width:100%; height:auto; margin-top:10px;" alt="The Theft of Silas’s Gold">     </div>     </div>`)[0];
+            popup_4d293ebca5145de821a1cfa883cd3cf8.setContent(html_7b203783454cdb87f379e1eaccaef365);
+        
+
+        marker_c707e53cf687d47eb17d9d98fc5a7322.bindPopup(popup_4d293ebca5145de821a1cfa883cd3cf8)
+        ;
+
+        
+    
+    
+            marker_c707e53cf687d47eb17d9d98fc5a7322.bindTooltip(
+                `<div>
+                     Step 6: The Theft of Silas’s Gold
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_44c7c9e9737fc7160d227afab33c720f = L.marker(
+                [52.295, -1.587],
+                {}
+            ).addTo(map_3ccb9f99a0d79d8a069697ba67e6f7a6);
+        
+    
+            var beautify_icon_1e3a6632449ddcd6e2f3ba393cfe0c23 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "darkblue", "borderWidth": 5, "icon": "7", "iconShape": "marker", "innerIconStyle": "font-size:16px; font-weight:bold;", "isAlphaNumericIcon": false, "spin": false, "textColor": "darkblue"}
+            )
+            marker_44c7c9e9737fc7160d227afab33c720f.setIcon(beautify_icon_1e3a6632449ddcd6e2f3ba393cfe0c23);
+        
+    
+        var popup_4682ca73f80d634da2947f670eb72e89 = L.popup({"maxWidth": 300});
+
+        
+            var html_e6b9814b779e6a340009e02068e2efcc = $(`<div id="html_e6b9814b779e6a340009e02068e2efcc" style="width: 100.0%; height: 100.0%;">     <div style="width:300px; height:300px; overflow-y:auto; font-family: Arial, sans-serif;">         <strong style="font-size:20px;">Eppie’s Arrival and the Gift of Renewal</strong>         <p style="font-size:14px;">         Eppie’s arrival transforms Silas’s life, reawakening his capacity for love and trust. Her presence bridges the gap between          Silas and the Raveloe community, symbolizing the redemptive power of familial and societal bonds.         </p>         <img src="https://tse3.mm.bing.net/th?id=OIP.xaXE3GSTYhrY8lGR4Pfq5wHaL4&pid=Api" style="width:100%; height:auto; margin-top:10px;" alt="Eppie’s Arrival and the Gift of Renewal">     </div>     </div>`)[0];
+            popup_4682ca73f80d634da2947f670eb72e89.setContent(html_e6b9814b779e6a340009e02068e2efcc);
+        
+
+        marker_44c7c9e9737fc7160d227afab33c720f.bindPopup(popup_4682ca73f80d634da2947f670eb72e89)
+        ;
+
+        
+    
+    
+            marker_44c7c9e9737fc7160d227afab33c720f.bindTooltip(
+                `<div>
+                     Step 7: Eppie’s Arrival and the Gift of Renewal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d21141948218401aadbb395bfb0154f1 = L.marker(
+                [52.3, -1.595],
+                {}
+            ).addTo(map_3ccb9f99a0d79d8a069697ba67e6f7a6);
+        
+    
+            var beautify_icon_373a4c1165bebe8edddf908c029638f0 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "darkblue", "borderWidth": 5, "icon": "8", "iconShape": "marker", "innerIconStyle": "font-size:16px; font-weight:bold;", "isAlphaNumericIcon": false, "spin": false, "textColor": "darkblue"}
+            )
+            marker_d21141948218401aadbb395bfb0154f1.setIcon(beautify_icon_373a4c1165bebe8edddf908c029638f0);
+        
+    
+        var popup_a7615781e278b250d2a36f0c4bf4f0f7 = L.popup({"maxWidth": 300});
+
+        
+            var html_c657a0679bf747a167499f6cdb7017e1 = $(`<div id="html_c657a0679bf747a167499f6cdb7017e1" style="width: 100.0%; height: 100.0%;">     <div style="width:300px; height:300px; overflow-y:auto; font-family: Arial, sans-serif;">         <strong style="font-size:20px;">Silas and Eppie’s Garden: Cultivating Connection</strong>         <p style="font-size:14px;">         The shared act of gardening symbolizes Silas’s reintegration into society. This act of cultivation mirrors his emotional          growth and the flourishing of his relationships within Raveloe.         </p>         <img src="https://tse3.mm.bing.net/th?id=OIP.-32SzygTXcrg01PASeKJbwHaLl&pid=Api" style="width:100%; height:auto; margin-top:10px;" alt="Silas and Eppie’s Garden: Cultivating Connection">     </div>     </div>`)[0];
+            popup_a7615781e278b250d2a36f0c4bf4f0f7.setContent(html_c657a0679bf747a167499f6cdb7017e1);
+        
+
+        marker_d21141948218401aadbb395bfb0154f1.bindPopup(popup_a7615781e278b250d2a36f0c4bf4f0f7)
+        ;
+
+        
+    
+    
+            marker_d21141948218401aadbb395bfb0154f1.bindTooltip(
+                `<div>
+                     Step 8: Silas and Eppie’s Garden: Cultivating Connection
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78f1fce67675082e534542dedba6c418 = L.marker(
+                [52.31, -1.58],
+                {}
+            ).addTo(map_3ccb9f99a0d79d8a069697ba67e6f7a6);
+        
+    
+            var beautify_icon_0b0c20f315881e27086952591b0efc18 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "darkblue", "borderWidth": 5, "icon": "9", "iconShape": "marker", "innerIconStyle": "font-size:16px; font-weight:bold;", "isAlphaNumericIcon": false, "spin": false, "textColor": "darkblue"}
+            )
+            marker_78f1fce67675082e534542dedba6c418.setIcon(beautify_icon_0b0c20f315881e27086952591b0efc18);
+        
+    
+        var popup_ba96533486ba86e6acb9e8818dd08921 = L.popup({"maxWidth": 300});
+
+        
+            var html_5eadd4485015e177c83381bc1dd4413c = $(`<div id="html_5eadd4485015e177c83381bc1dd4413c" style="width: 100.0%; height: 100.0%;">     <div style="width:300px; height:300px; overflow-y:auto; font-family: Arial, sans-serif;">         <strong style="font-size:20px;">The Cass Family and Raveloe’s Social Hierarchy</strong>         <p style="font-size:14px;">         The Cass family’s wealth and influence embody Raveloe’s social structure, contrasting with Silas’s humble existence.          Eliot critiques privilege while highlighting the potential for moral growth through connection and responsibility.         </p>         <img src="https://tse3.mm.bing.net/th?id=OIP.jxhXrO5uITlxGxIXS-QuAwHaL9&pid=Api" style="width:100%; height:auto; margin-top:10px;" alt="The Cass Family and Raveloe’s Social Hierarchy">     </div>     </div>`)[0];
+            popup_ba96533486ba86e6acb9e8818dd08921.setContent(html_5eadd4485015e177c83381bc1dd4413c);
+        
+
+        marker_78f1fce67675082e534542dedba6c418.bindPopup(popup_ba96533486ba86e6acb9e8818dd08921)
+        ;
+
+        
+    
+    
+            marker_78f1fce67675082e534542dedba6c418.bindTooltip(
+                `<div>
+                     Step 9: The Cass Family and Raveloe’s Social Hierarchy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_91110e49a8670384d63ce18137a1d613 = L.marker(
+                [54.5643, -1.3401],
+                {}
+            ).addTo(map_3ccb9f99a0d79d8a069697ba67e6f7a6);
+        
+    
+            var beautify_icon_3f56fca326e26c3d82898dc54f5f9543 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "darkblue", "borderWidth": 5, "icon": "10", "iconShape": "marker", "innerIconStyle": "font-size:16px; font-weight:bold;", "isAlphaNumericIcon": false, "spin": false, "textColor": "darkblue"}
+            )
+            marker_91110e49a8670384d63ce18137a1d613.setIcon(beautify_icon_3f56fca326e26c3d82898dc54f5f9543);
+        
+    
+        var popup_8ace9ef64672906d5ce7d88383e3197d = L.popup({"maxWidth": 300});
+
+        
+            var html_67554cf1b49283c3ba6dd9dcabf5a6ea = $(`<div id="html_67554cf1b49283c3ba6dd9dcabf5a6ea" style="width: 100.0%; height: 100.0%;">     <div style="width:300px; height:300px; overflow-y:auto; font-family: Arial, sans-serif;">         <strong style="font-size:20px;">Silas’s Return to Lantern Yard</strong>         <p style="font-size:14px;">         Silas revisits Lantern Yard to find it unrecognizable, a reflection of industrial transformation and the impermanence          of human constructs. This moment affirms the enduring value of his life in Raveloe and the relationships he has cultivated.         </p>         <img src="https://via.placeholder.com/300x200?text=Placeholder" style="width:100%; height:auto; margin-top:10px;" alt="Silas’s Return to Lantern Yard">     </div>     </div>`)[0];
+            popup_8ace9ef64672906d5ce7d88383e3197d.setContent(html_67554cf1b49283c3ba6dd9dcabf5a6ea);
+        
+
+        marker_91110e49a8670384d63ce18137a1d613.bindPopup(popup_8ace9ef64672906d5ce7d88383e3197d)
+        ;
+
+        
+    
+    
+            marker_91110e49a8670384d63ce18137a1d613.bindTooltip(
+                `<div>
+                     Step 10: Silas’s Return to Lantern Yard
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b017764a9780fbf11592337cb58beb94 = L.polyline(
+                [[54.5643, -1.3401], [52.2819, -1.5849]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_3ccb9f99a0d79d8a069697ba67e6f7a6);
+        
+    
+            poly_line_b017764a9780fbf11592337cb58beb94.bindTooltip(
+                `<div>
+                     From Betrayal to New Beginnings
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5e8d22b58b8283416479c683973d38e8 = L.polyline(
+                [[52.2819, -1.5849], [52.291, -1.596]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_3ccb9f99a0d79d8a069697ba67e6f7a6);
+        
+    
+            poly_line_5e8d22b58b8283416479c683973d38e8.bindTooltip(
+                `<div>
+                     The Stranger Among Us
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e729eeb397d7705e05e45e0801270f5d = L.polyline(
+                [[52.291, -1.596], [52.27, -1.57]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_3ccb9f99a0d79d8a069697ba67e6f7a6);
+        
+    
+            poly_line_e729eeb397d7705e05e45e0801270f5d.bindTooltip(
+                `<div>
+                     Threads of Isolation
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_996baa99937f39aec5d5fe40ca0428f5 = L.polyline(
+                [[52.27, -1.57], [52.285, -1.58]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_3ccb9f99a0d79d8a069697ba67e6f7a6);
+        
+    
+            poly_line_996baa99937f39aec5d5fe40ca0428f5.bindTooltip(
+                `<div>
+                     Curiosity Breeds Connection
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c386bdeba64eab9ac3040a01fc13a76e = L.polyline(
+                [[52.285, -1.58], [52.275, -1.6]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_3ccb9f99a0d79d8a069697ba67e6f7a6);
+        
+    
+            poly_line_c386bdeba64eab9ac3040a01fc13a76e.bindTooltip(
+                `<div>
+                     Faith and Community: A Second Chance
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4998e5fe0b5efd8e0a4c966cfda5b9ee = L.polyline(
+                [[52.275, -1.6], [52.295, -1.587]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_3ccb9f99a0d79d8a069697ba67e6f7a6);
+        
+    
+            poly_line_4998e5fe0b5efd8e0a4c966cfda5b9ee.bindTooltip(
+                `<div>
+                     Gold to Grace: A Pivotal Loss
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5ff06f89d771909ee98fa254ccada019 = L.polyline(
+                [[52.295, -1.587], [52.3, -1.595]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_3ccb9f99a0d79d8a069697ba67e6f7a6);
+        
+    
+            poly_line_5ff06f89d771909ee98fa254ccada019.bindTooltip(
+                `<div>
+                     Love Finds Its Way
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d5e8e8eb4720652a87514c3ca8a1375d = L.polyline(
+                [[52.3, -1.595], [52.31, -1.58]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_3ccb9f99a0d79d8a069697ba67e6f7a6);
+        
+    
+            poly_line_d5e8e8eb4720652a87514c3ca8a1375d.bindTooltip(
+                `<div>
+                     Roots of Redemption
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_dbe8dedd2c95aaf20ea031ac357a2507 = L.polyline(
+                [[52.31, -1.58], [54.5643, -1.3401]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_3ccb9f99a0d79d8a069697ba67e6f7a6);
+        
+    
+            poly_line_dbe8dedd2c95aaf20ea031ac357a2507.bindTooltip(
+                `<div>
+                     Privilege and Transformation
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_332f941a5b56d60e6f571dacdf7b5760 = L.circle(
+                [54.5643, -1.4601],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_3ccb9f99a0d79d8a069697ba67e6f7a6);
+        
+    
+        var popup_499109e056d6ab700c0bde7e35d2a8e6 = L.popup({"maxWidth": 400});
+
+        
+            var html_0099039d1c810f50d75d3518606f5563 = $(`<div id="html_0099039d1c810f50d75d3518606f5563" style="width: 100.0%; height: 100.0%;"> <div style="width:400px; font-family: Arial, sans-serif;">     <strong style="font-size:20px;">Project Summary and Instructions</strong>     <p style="font-size:14px;"> This digital map explores the question:  <b>How does the structure and influence of the Raveloe community catalyze Silas Marner’s redemption, and what does this suggest about George Eliot’s broader philosophy on the interplay between individual and society?</b><br><br> The map traces key events and locations in Silas Marner’s journey, illustrating how Raveloe’s close-knit community fosters his transformation from isolation to connection. Each marker corresponds to a pivotal moment, with descriptions that analyze Eliot’s themes of belonging, love, and moral growth. The paths between markers highlight the story’s progression and thematic arcs.<br><br> <b>Instructions:</b><br> - Click on each marker to view detailed descriptions and images of the events or locations.<br> - Hover over the paths to see labels that emphasize the connections between events.<br> - Explore the sequence of numbered markers to follow Silas’s journey chronologically.<br> Enjoy your journey through Raveloe and the transformative story of Silas Marner! </p> </div> </div>`)[0];
+            popup_499109e056d6ab700c0bde7e35d2a8e6.setContent(html_0099039d1c810f50d75d3518606f5563);
+        
+
+        circle_332f941a5b56d60e6f571dacdf7b5760.bindPopup(popup_499109e056d6ab700c0bde7e35d2a8e6)
+        ;
+
+        
+    
+    
+            circle_332f941a5b56d60e6f571dacdf7b5760.bindTooltip(
+                `<div>
+                     CLICK ME
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
