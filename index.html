@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    
-        <script>
-            L_NO_TOUCH = false;
-            L_DISABLE_3D = false;
-        </script>
-    
+    <script>
+        L_NO_TOUCH = false;
+        L_DISABLE_3D = false;
+    </script>
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
@@ -21,53 +18,42 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
-    
-            <meta name="viewport" content="width=device-width,
-                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-            <style>
-                #map_3ccb9f99a0d79d8a069697ba67e6f7a6 {
-                    position: relative;
-                    width: 100.0%;
-                    height: 100.0%;
-                    left: 0.0%;
-                    top: 0.0%;
-                }
-            </style>
-        
+    <meta name="viewport" content="width=device-width,
+          initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>
+        #map_3ccb9f99a0d79d8a069697ba67e6f7a6 {
+            position: relative;
+            width: 100.0%;
+            height: 100.0%;
+            left: 0.0%;
+            top: 0.0%;
+        }
+    </style>
     <script src="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.css"/>
 </head>
 <body>
-    
-    
-            <div class="folium-map" id="map_3ccb9f99a0d79d8a069697ba67e6f7a6" ></div>
-        
+    <div class="folium-map" id="map_3ccb9f99a0d79d8a069697ba67e6f7a6" ></div>
 </body>
 <script>
-    
-    
-            var map_3ccb9f99a0d79d8a069697ba67e6f7a6 = L.map(
-                "map_3ccb9f99a0d79d8a069697ba67e6f7a6",
-                {
-                    center: [54.5643, -1.3401],
-                    crs: L.CRS.EPSG3857,
-                    zoom: 15,
-                    zoomControl: true,
-                    preferCanvas: false,
-                }
-            );
+    var map_3ccb9f99a0d79d8a069697ba67e6f7a6 = L.map(
+        "map_3ccb9f99a0d79d8a069697ba67e6f7a6",
+        {
+            center: [54.5643, -1.3401],
+            crs: L.CRS.EPSG3857,
+            zoom: 15,
+            zoomControl: true,
+            preferCanvas: false,
+        }
+    );
 
-            
+    var tile_layer_595274be53e963c2ede97b59efa94c40 = L.tileLayer(
+        "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+        {"attribution": "&copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"http://cartodb.com/attributions\">CartoDB</a>, CartoDB <a href =\"http://cartodb.com/attributions\">attributions</a>", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+    ).addTo(map_3ccb9f99a0d79d8a069697ba67e6f7a6);
 
-        
-    
-            var tile_layer_595274be53e963c2ede97b59efa94c40 = L.tileLayer(
-                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
-                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_3ccb9f99a0d79d8a069697ba67e6f7a6);
-        
-    
-            var marker_ca385c569c55c4eedbff9d67ab5f2ba0 = L.marker(
+    // Insert all marker and polyline definitions here...
+    var marker_ca385c569c55c4eedbff9d67ab5f2ba0 = L.marker(
                 [54.5643, -1.36],
                 {}
             ).addTo(map_3ccb9f99a0d79d8a069697ba67e6f7a6);
@@ -523,31 +509,150 @@
             );
         
     
-            var circle_332f941a5b56d60e6f571dacdf7b5760 = L.circle(
-                [54.5643, -1.4601],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
-            ).addTo(map_3ccb9f99a0d79d8a069697ba67e6f7a6);
+        //     var circle_332f941a5b56d60e6f571dacdf7b5760 = L.circle(
+        //         [54.5643, -1.4601],
+        //         {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+        //     ).addTo(map_3ccb9f99a0d79d8a069697ba67e6f7a6);
         
     
-        var popup_499109e056d6ab700c0bde7e35d2a8e6 = L.popup({"maxWidth": 400});
+        // var popup_499109e056d6ab700c0bde7e35d2a8e6 = L.popup({"maxWidth": 400});
 
         
-            var html_0099039d1c810f50d75d3518606f5563 = $(`<div id="html_0099039d1c810f50d75d3518606f5563" style="width: 100.0%; height: 100.0%;"> <div style="width:400px; font-family: Arial, sans-serif;">     <strong style="font-size:20px;">Project Summary and Instructions</strong>     <p style="font-size:14px;"> This digital map explores the question:  <b>How does the structure and influence of the Raveloe community catalyze Silas Marner’s redemption, and what does this suggest about George Eliot’s broader philosophy on the interplay between individual and society?</b><br><br> The map traces key events and locations in Silas Marner’s journey, illustrating how Raveloe’s close-knit community fosters his transformation from isolation to connection. Each marker corresponds to a pivotal moment, with descriptions that analyze Eliot’s themes of belonging, love, and moral growth. The paths between markers highlight the story’s progression and thematic arcs.<br><br> <b>Instructions:</b><br> - Click on each marker to view detailed descriptions and images of the events or locations.<br> - Hover over the paths to see labels that emphasize the connections between events.<br> - Explore the sequence of numbered markers to follow Silas’s journey chronologically.<br> Enjoy your journey through Raveloe and the transformative story of Silas Marner! </p> </div> </div>`)[0];
-            popup_499109e056d6ab700c0bde7e35d2a8e6.setContent(html_0099039d1c810f50d75d3518606f5563);
+        //     var html_0099039d1c810f50d75d3518606f5563 = $(`<div id="html_0099039d1c810f50d75d3518606f5563" style="width: 100.0%; height: 100.0%;"> <div style="width:400px; font-family: Arial, sans-serif;">     <strong style="font-size:20px;">Project Summary and Instructions</strong>     <p style="font-size:14px;"> This digital map explores the question:  <b>How does the structure and influence of the Raveloe community catalyze Silas Marner’s redemption, and what does this suggest about George Eliot’s broader philosophy on the interplay between individual and society?</b><br><br> The map traces key events and locations in Silas Marner’s journey, illustrating how Raveloe’s close-knit community fosters his transformation from isolation to connection. Each marker corresponds to a pivotal moment, with descriptions that analyze Eliot’s themes of belonging, love, and moral growth. The paths between markers highlight the story’s progression and thematic arcs.<br><br> <b>Instructions:</b><br> - Click on each marker to view detailed descriptions and images of the events or locations.<br> - Hover over the paths to see labels that emphasize the connections between events.<br> - Explore the sequence of numbered markers to follow Silas’s journey chronologically.<br> Enjoy your journey through Raveloe and the transformative story of Silas Marner! </p> </div> </div>`)[0];
+        //     popup_499109e056d6ab700c0bde7e35d2a8e6.setContent(html_0099039d1c810f50d75d3518606f5563);
         
 
-        circle_332f941a5b56d60e6f571dacdf7b5760.bindPopup(popup_499109e056d6ab700c0bde7e35d2a8e6)
-        ;
+        // circle_332f941a5b56d60e6f571dacdf7b5760.bindPopup(popup_499109e056d6ab700c0bde7e35d2a8e6)
+        // ;
 
         
     
     
-            circle_332f941a5b56d60e6f571dacdf7b5760.bindTooltip(
-                `<div>
-                     CLICK ME
-                 </div>`,
-                {"sticky": true}
-            );
-        
+            // circle_332f941a5b56d60e6f571dacdf7b5760.bindTooltip(
+            //     `<div>
+            //          CLICK ME
+            //      </div>`,
+            //     {"sticky": true}
+            // );
+
+    // Add "Start Tour" functionality
+    let currentMarkerIndex = 0; // Track the current marker index
+    let tourMarkers = []; // Array to store markers
+    let nextButton; // Reference to the Next button for dynamic show/hide
+
+    function startTour() {
+        // Initialize the markers for the tour
+        tourMarkers = [
+            marker_ca385c569c55c4eedbff9d67ab5f2ba0, // Marker 1
+            marker_96eaa7810eef488058917043316c99d9, // Marker 2
+            marker_51271650729630a80c9f31d4b4d35912, // Marker 3
+            marker_2f5678960f070e738f9008cd0f9853e9, // Marker 4
+            marker_22b87dcb8794404a31bf5dafc2d15472, // Marker 5
+            marker_c707e53cf687d47eb17d9d98fc5a7322, // Marker 6
+            marker_44c7c9e9737fc7160d227afab33c720f, // Marker 7
+            marker_d21141948218401aadbb395bfb0154f1, // Marker 8
+            marker_78f1fce67675082e534542dedba6c418, // Marker 9
+            marker_91110e49a8670384d63ce18137a1d613  // Marker 10
+        ];
+
+        currentMarkerIndex = 0; 
+        nextButton.style.display = "block";
+        flyToMarker();
+    }
+
+    function flyToMarker() {
+        if (currentMarkerIndex < tourMarkers.length) {
+            const marker = tourMarkers[currentMarkerIndex];
+            const latlng = marker.getLatLng();
+            map_3ccb9f99a0d79d8a069697ba67e6f7a6.flyTo(latlng, 15, { duration: 2 });
+            marker.openPopup();
+        } else {
+            alert("Tour complete!");
+        }
+    }
+
+    function proceedToNextMarker() {
+        if (currentMarkerIndex < tourMarkers.length - 1) {
+            currentMarkerIndex++;
+            flyToMarker();
+        } else {
+            alert("You have reached the end of the tour!");
+        }
+    }
+
+    function stopTour() {
+        currentMarkerIndex = 0; 
+        tourMarkers = []; 
+        nextButton.style.display = "none"; 
+        alert("Tour stopped.");
+    }
+
+    function showProjectSummary() {
+        alert(`Project Summary:\n\nThis digital map explores the question: "How does the structure and influence of the Raveloe community catalyze Silas Marner’s redemption, and what does this suggest about George Eliot’s broader philosophy on the interplay between individual and society?"\n\nThe map traces key events and locations in Silas Marner’s journey, illustrating how Raveloe’s close-knit community fosters his transformation from isolation to connection.\n\nInstructions:\n- Click "Start Tour" to begin the guided map experience.\n- Use "Next" to proceed to the next location.\n- Click "Stop Tour" to exit the tour.\n\nEnjoy!`);
+    }
+
+
+    const otherCC = L.control({ position: "topright" });
+    otherCC.onAdd = function() {
+        const summaryButton = L.DomUtil.create("button", "tour-button");
+        summaryButton.innerHTML = "Project Summary";
+        summaryButton.style.padding = "10px";
+        summaryButton.style.background = "#6c757d";
+        summaryButton.style.color = "white";
+        summaryButton.style.border = "none";
+        summaryButton.style.cursor = "pointer";
+        summaryButton.style.fontSize = "16px";
+        summaryButton.style.borderRadius = "5px";
+        summaryButton.onclick = showProjectSummary;
+        return summaryButton
+    };
+    otherCC.addTo(map_3ccb9f99a0d79d8a069697ba67e6f7a6);
+
+    
+
+    const controlContainer = L.control({ position: "topright" });
+    controlContainer.onAdd = function () {
+        const container = L.DomUtil.create("div", "tour-buttons");
+
+
+        const startButton = L.DomUtil.create("button", "tour-button", container);
+        startButton.innerHTML = "Start Tour";
+        startButton.style.padding = "10px";
+        startButton.style.background = "#007bff";
+        startButton.style.color = "white";
+        startButton.style.border = "none";
+        startButton.style.cursor = "pointer";
+        startButton.style.fontSize = "16px";
+        startButton.style.borderRadius = "5px";
+        startButton.style.marginRight = "5px";
+        startButton.onclick = startTour;
+
+        nextButton = L.DomUtil.create("button", "tour-button", container);
+        nextButton.innerHTML = "Next Spot";
+        nextButton.style.padding = "10px";
+        nextButton.style.background = "#28a745";
+        nextButton.style.color = "white";
+        nextButton.style.border = "none";
+        nextButton.style.cursor = "pointer";
+        nextButton.style.fontSize = "16px";
+        nextButton.style.borderRadius = "5px";
+        nextButton.style.marginRight = "5px";
+        nextButton.style.display = "none"; 
+        nextButton.onclick = proceedToNextMarker;
+
+        const stopButton = L.DomUtil.create("button", "tour-button", container);
+        stopButton.innerHTML = "Stop Tour";
+        stopButton.style.padding = "10px";
+        stopButton.style.background = "#dc3545";
+        stopButton.style.color = "white";
+        stopButton.style.border = "none";
+        stopButton.style.cursor = "pointer";
+        stopButton.style.fontSize = "16px";
+        stopButton.style.borderRadius = "5px";
+        stopButton.onclick = stopTour;
+
+        return container;
+    };
+    controlContainer.addTo(map_3ccb9f99a0d79d8a069697ba67e6f7a6);
 </script>
 </html>
